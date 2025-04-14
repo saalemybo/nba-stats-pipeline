@@ -12,14 +12,14 @@ conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
 
 # Drop old table (optional)
-cursor.execute("DROP TABLE IF EXISTS curry_game_logs")
+cursor.execute("DROP TABLE IF EXISTS game_log")
 
 # Load into SQL
-df.to_sql("curry_game_logs", conn, index=False)
+df.to_sql("game_log", conn, index=False)
 
 # Check row count
-cursor.execute("SELECT COUNT(*) FROM curry_game_logs")
-print(f"✅ Loaded {cursor.fetchone()[0]} rows into curry_game_logs table.")
+cursor.execute("SELECT COUNT(*) FROM game_log")
+print(f"✅ Loaded {cursor.fetchone()[0]} rows into game_log table.")
 
 conn.commit()
 conn.close()

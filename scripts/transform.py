@@ -19,4 +19,4 @@ df['game_date'] = pd.to_datetime(df['game_date'])
 
 # Save cleaned data
 df.to_csv("data/clean_stats.csv", index=False)
-print(f"✅ Saved cleaned Curry stats to data/clean_stats.csv with {len(df)} rows.")
+print(f"✅ Saved cleaned player stats to data/clean_stats.csv with {len(df)} rows.")
