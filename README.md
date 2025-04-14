@@ -1,6 +1,6 @@
 # 🏀 NBA Player Stats Pipeline
 
-This project builds a full data pipeline that extracts NBA player stats from the `balldontlie` API, processes and cleans the data using Python, and stores it in a SQL database for analysis and visualization.
+This project builds a full data pipeline that extracts NBA player stats from the `nba_api` API, processes and cleans the data using Python, and stores it in a SQL database for analysis and visualization.
 
 ## 🔁 Features
 - Extract player data from an open NBA API
@@ -27,14 +27,3 @@ nba-stats-pipeline/ ├── scripts/ │ ├── extract.py │ ├── tr
 2. Run the scripts in order: `extract.py` → `transform.py` → `load.py`  
 3. Open the notebook to explore the data
 
-## 📊 Sample Questions to Answer
-- Who are the top 10 scorers this season?
-- Which teams have the most efficient players?
-- How do players' stats change over the season?
-
-## 📌 To Do
-- [ ] Add advanced metrics (e.g., PER, usage rate)
-- [ ] Automate daily updates
-- [ ] Add Streamlit dashboard
-
----
